@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>TEST/STAGING Initial UK Chatbot V2.5</title>
+</head>
+
+<body id="app" class="app">
+
+Code for TEST/STAGING (initial.co.uk)
+
+    <!-- The following code is to be added to the page where the widget is to appear -->
+
+<div id="flmntWidgetInit"
+    flmnt-startintent="hello"
+    flmnt-apikey="pa_consulting"
+    flmnt-widgetplaceholder="Type your message here..."
+    flmnt-rootpath="https://cdn.rentokil.com/assets/global/chatbot/"
+    flmnt-botname="Bessie"
+    flmnt-botintroduction="I can assist you with new enquiries, service requests, or any complaints you may have. If I am unable to help, I'll direct you to one of our friendly contact centre agents."
+    flmnt-preview="You are chatting to Bessie."
+    flmnt-subpreview="Initial's new digital chat assistant"
+    flmnt-icon="bessie-blue.svg"
+    flmnt-primarycolour="0,125,197"
+    flmnt-widgeturl="./widget.html"
+    flmnt-autoscroll="false"
+    flmnt-delay="2500"
+    flmnt-popupdelay="8000"
+    flmnt-privacylink = ""
+    flmnt-endpoint="http://localhost:5000/sent"></div>
+
+<script type="text/javascript" id="flmnt-d449e06b-9ab8-45bc-be41-5ee01cb021ae">
+(function() {
+    function flmntAsyncLoad(){
+        var d = document,
+            h = d.getElementById('flmnt-d449e06b-9ab8-45bc-be41-5ee01cb021ae'),
+            s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = './js/widget.js';
+        h.parentNode.insertBefore(s, h);
+    }
+    if (window.attachEvent) {
+        window.attachEvent('onload', flmntAsyncLoad);
+    } else {
+        window.addEventListener('load', flmntAsyncLoad, false);
+    }
+})();
+</script>
+
+ <!--End code required to make widget appear on the page -->
+
+
+</body>
+</html>
