@@ -1,13 +1,13 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "a simple node server which is ready to build a chatbot",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Amir Gevari",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
